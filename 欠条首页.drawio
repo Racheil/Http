@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-18T05:29:37.860Z" agent="Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="JotMP8Dx57dSjas5zd9Q" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-18T09:42:15.501Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="Gb7ySq3MZUPNu1uFc6Ni" version="12.2.6" type="github" pages="1">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="1220" dy="623" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="989" dy="567" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -25,7 +25,7 @@
         <mxCell id="7baba1c4bc27f4b0-28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="7baba1c4bc27f4b0-4" vertex="1">
           <mxGeometry x="50" y="394" width="10" height="90" as="geometry"/>
         </mxCell>
-        <mxCell id="9OmuGr6ANbS1k94bwXg4-8" value="openapi校验openid和openToken" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" parent="7baba1c4bc27f4b0-4" vertex="1">
+        <mxCell id="9OmuGr6ANbS1k94bwXg4-8" value="openapi校验openId和openToken" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" parent="7baba1c4bc27f4b0-4" vertex="1">
           <mxGeometry y="293" width="110" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="7baba1c4bc27f4b0-5" value="server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
@@ -55,14 +55,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="gdQqW5UKWcF35wgt8SVr-1" value="&lt;br&gt;1.第三方应用，使用借贷宝用户信息，调用openapi进行授权" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=0.101;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="7baba1c4bc27f4b0-10" edge="1">
+        <mxCell id="gdQqW5UKWcF35wgt8SVr-1" value="&lt;br&gt;1.第三方应用，使用借贷宝用户信息，调用openapi进行授权" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="150" y="195" as="sourcePoint"/>
-            <mxPoint x="580" y="195" as="targetPoint"/>
-            <Array as="points">
-              <mxPoint x="550" y="195"/>
-              <mxPoint x="580" y="195"/>
-            </Array>
+            <mxPoint x="156" y="194" as="sourcePoint"/>
+            <mxPoint x="644.5" y="194.42857142857144" as="targetPoint"/>
+            <Array as="points"/>
           </mxGeometry>
         </mxCell>
         <mxCell id="gdQqW5UKWcF35wgt8SVr-6" value="4.换取memberID(欠条)&lt;br&gt;和accessToken（欠条）&lt;br&gt;完后欠条服务的登录" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;" parent="1" edge="1">
@@ -93,7 +90,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="gdQqW5UKWcF35wgt8SVr-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
-          <mxGeometry x="795" y="487" width="10" height="63" as="geometry"/>
+          <mxGeometry x="797" y="487" width="10" height="63" as="geometry"/>
         </mxCell>
         <mxCell id="gdQqW5UKWcF35wgt8SVr-21" value="返回债务/债权总金额" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=-0.399;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -125,17 +122,17 @@
         <mxCell id="9OmuGr6ANbS1k94bwXg4-14" value="返回&lt;br&gt;金额" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="70" y="425" width="30" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="9OmuGr6ANbS1k94bwXg4-24" value="把memberID转换为openid和openToken" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="9OmuGr6ANbS1k94bwXg4-24" value="把memberID转换为openId和openToken" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="265" y="372" width="130" height="40" as="geometry"/>
         </mxCell>
-        <mxCell id="9OmuGr6ANbS1k94bwXg4-26" value="frame" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=20;" parent="1" vertex="1">
-          <mxGeometry x="70" y="130" width="640" height="220" as="geometry"/>
-        </mxCell>
-        <mxCell id="9OmuGr6ANbS1k94bwXg4-27" value="frame" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=20;" parent="1" vertex="1">
-          <mxGeometry x="70" y="360" width="750" height="250" as="geometry"/>
-        </mxCell>
-        <mxCell id="kx64ISdg5gA9TyvqFG6k-1" value="&lt;span style=&quot;font-family: &amp;#34;verdana&amp;#34;&quot;&gt;通过手机号密码，微信，微博登录请求借贷宝passport,&lt;/span&gt;&lt;br style=&quot;font-family: &amp;#34;verdana&amp;#34;&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;verdana&amp;#34;&quot;&gt;得到借贷宝memberID和借贷宝accessToken&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="kx64ISdg5gA9TyvqFG6k-1" value="&lt;span style=&quot;font-family: &amp;#34;verdana&amp;#34;&quot;&gt;通过手机号密码，微信，微博登录请求借贷宝passport,&lt;/span&gt;&lt;br style=&quot;font-family: &amp;#34;verdana&amp;#34;&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;verdana&amp;#34;&quot;&gt;得到借贷宝memberID和借贷宝accessToken&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="245" y="132" width="320" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="RaOKE88ktWt_zm394A-6-3" value="frame" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="69" y="127" width="633" height="222" as="geometry"/>
+        </mxCell>
+        <mxCell id="RaOKE88ktWt_zm394A-6-5" value="frame" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="69" y="362" width="773" height="236" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
