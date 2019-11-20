@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-19T16:08:22.896Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="xhIcfuXwo5cS_wnEPmGC" version="12.2.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-20T08:22:14.885Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="hbYUK7769KWSDpxCZ4Vj" version="12.2.7" type="github" pages="1">
   <diagram id="q7AF34wDNDNPmXWDPViA" name="第 1 页">
-    <mxGraphModel dx="754" dy="427" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1077" dy="629" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -54,7 +54,7 @@
         <mxCell id="6vEbpjVL_Du5tUhJGIu1-25" value="风控系统" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="515" y="221" width="90" height="46" as="geometry"/>
         </mxCell>
-        <mxCell id="6vEbpjVL_Du5tUhJGIu1-26" value="获取eventID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="6vEbpjVL_Du5tUhJGIu1-26" value="eventID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="433" y="222" width="70" height="20" as="geometry"/>
         </mxCell>
         <mxCell id="6vEbpjVL_Du5tUhJGIu1-28" value="欠条server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -69,13 +69,13 @@
             <mxPoint x="374.5" y="270" as="targetPoint"/>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6vEbpjVL_Du5tUhJGIu1-32" value="销帐系统" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="6vEbpjVL_Du5tUhJGIu1-32" value="销账系统" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="708" y="399" width="92" height="42" as="geometry"/>
         </mxCell>
         <mxCell id="6vEbpjVL_Du5tUhJGIu1-33" value="展期系统" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="708" y="207" width="92" height="39" as="geometry"/>
         </mxCell>
-        <mxCell id="6vEbpjVL_Du5tUhJGIu1-34" value="1.债务系统获取债务，产品系统获取产品信息&lt;br&gt;&amp;nbsp;2.请求销账和打赏系统，判断是否存在销账和打赏&lt;br&gt;&amp;nbsp; &amp;nbsp;3.条件允许，创建展期，生成协议&lt;br&gt;4.给债务人通过短信，小秘书等方式推送消息" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="6vEbpjVL_Du5tUhJGIu1-34" value="1.债务系统获取债务，产品系统获取产品信息&lt;br&gt;&amp;nbsp;2.调用销账和打赏系统，判断是否存在销账和打赏&lt;br&gt;&amp;nbsp; &amp;nbsp;3.条件允许，创建展期，生成协议&lt;br&gt;4.给债务人通过短信，小秘书等方式推送消息" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="720" y="128" width="290" height="70" as="geometry"/>
         </mxCell>
         <mxCell id="6vEbpjVL_Du5tUhJGIu1-35" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
@@ -183,9 +183,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6vEbpjVL_Du5tUhJGIu1-58" value="订单系统" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="880" y="300" width="92" height="39" as="geometry"/>
+          <mxGeometry x="881" y="321" width="92" height="39" as="geometry"/>
         </mxCell>
-        <mxCell id="6vEbpjVL_Du5tUhJGIu1-60" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="6vEbpjVL_Du5tUhJGIu1-58" edge="1">
+        <mxCell id="6vEbpjVL_Du5tUhJGIu1-60" value="" style="endArrow=classic;html=1;entryX=0;entryY=1.026;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="8HCNdyHyl7NJRBIje_xz-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="800" y="320" as="sourcePoint"/>
             <mxPoint x="718" y="239.5" as="targetPoint"/>
@@ -214,7 +214,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6vEbpjVL_Du5tUhJGIu1-66" value="涉及支付的场景&lt;br&gt;超额支付的拦截&lt;br&gt;调用支付网关" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
-          <mxGeometry x="870" y="342" width="120" height="48" as="geometry"/>
+          <mxGeometry x="874" y="367" width="120" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="8HCNdyHyl7NJRBIje_xz-1" value="产品系统" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="881" y="279" width="92" height="39" as="geometry"/>
+        </mxCell>
+        <mxCell id="8HCNdyHyl7NJRBIje_xz-2" value="获取产品信息&lt;br&gt;维护产品状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" vertex="1" parent="1">
+          <mxGeometry x="879.5" y="242" width="97" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="8HCNdyHyl7NJRBIje_xz-3" value="端调用payui" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="254" y="431" width="73" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
