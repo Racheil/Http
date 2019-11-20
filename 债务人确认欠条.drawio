@@ -1,6 +1,6 @@
-<mxfile host="www.draw.io" modified="2019-11-18T13:01:53.677Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="0re3AOqCo-2NeYt1emSw" version="12.2.6" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2019-11-20T09:33:06.304Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36" etag="3s9yc_465K0G3bMOP4lH" version="12.2.7" type="github" pages="2">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="1730" dy="993" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1544" dy="1064" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
@@ -29,7 +29,10 @@
           <mxGeometry x="50" y="455" width="10" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="7baba1c4bc27f4b0-7" value="债务系统" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="960" y="80" width="100" height="780" as="geometry"/>
+          <mxGeometry x="960" y="80" width="99" height="780" as="geometry"/>
+        </mxCell>
+        <mxCell id="JvaujXZ0DCOeLBHdE7bS-6" value="insert&amp;nbsp; iou_operate_order表，状态为1，待确认&lt;br&gt;更新iou_relation，锁为1，占用状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="7baba1c4bc27f4b0-7" vertex="1">
+          <mxGeometry x="-72.5" y="450" width="333" height="38" as="geometry"/>
         </mxCell>
         <mxCell id="7baba1c4bc27f4b0-8" value="client" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="100" y="80" width="100" height="800" as="geometry"/>
@@ -192,7 +195,7 @@
         <mxCell id="O3VApOqD4FNgEd7Cwk2W-24" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
           <mxGeometry x="450" y="475" width="10" height="385" as="geometry"/>
         </mxCell>
-        <mxCell id="O3VApOqD4FNgEd7Cwk2W-25" value="确认欠条&lt;br&gt;" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" parent="1" edge="1">
+        <mxCell id="O3VApOqD4FNgEd7Cwk2W-25" value="确认欠条&lt;br&gt;iou_relation加锁" style="html=1;verticalAlign=bottom;endArrow=block;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" parent="1" edge="1">
           <mxGeometry x="0.0769" relative="1" as="geometry">
             <mxPoint x="460" y="503" as="sourcePoint"/>
             <Array as="points">
@@ -335,13 +338,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="O3VApOqD4FNgEd7Cwk2W-52" value="根据返回结果：&lt;br&gt;更新operate_order状态，（1，进行中，4，成功，5，失败）&lt;br&gt;更新iou_relation表，状态为1确认，lock为0，解锁；失败只更新lock&lt;br&gt;服务费：更新iou_installment状态为6，待确认收款状态&lt;br&gt;推送mq" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
+        <mxCell id="O3VApOqD4FNgEd7Cwk2W-52" value="根据返回结果：&lt;br&gt;更新iou_operate_order状态，（1，进行中，4，成功，5，失败）&lt;br&gt;更新iou_relation表，状态为1确认，lock为0，解锁；失败只更新lock&lt;br&gt;服务费：更新iou_installment状态为6，待确认收款状态&lt;br&gt;推送mq" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
           <mxGeometry x="650" y="769" width="378" height="68" as="geometry"/>
         </mxCell>
-        <mxCell id="s3mgId72Oa9drYp60PR4-1" value="查询iou_relation表，判断欠条是否存在，不存在，返回5&lt;br&gt;判断是否处于可确认状态，0可确认，其他不可确认;&lt;br&gt;判断欠条锁是否为1,1被占用，不可操作，0可操作;&lt;br&gt;判断是否处于可确认时间内" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
+        <mxCell id="s3mgId72Oa9drYp60PR4-1" value="查询iou_relation表，判断欠条是否存在，不存在，返回5失败&lt;br&gt;判断是否处于可确认状态，0可确认，其他不可确认;&lt;br&gt;判断欠条锁是否为1,1被占用，不可操作，0可操作;&lt;br&gt;判断是否处于可确认时间内" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
           <mxGeometry x="363" y="529" width="333" height="75" as="geometry"/>
         </mxCell>
-        <mxCell id="JvaujXZ0DCOeLBHdE7bS-4" value="response" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="1">
+        <mxCell id="JvaujXZ0DCOeLBHdE7bS-4" value="response" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" parent="1" edge="1">
           <mxGeometry x="-0.1459" relative="1" as="geometry">
             <mxPoint x="460" y="856" as="targetPoint"/>
             <Array as="points">
@@ -351,9 +354,6 @@
             <mxPoint x="590" y="855.5" as="sourcePoint"/>
             <mxPoint as="offset"/>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="JvaujXZ0DCOeLBHdE7bS-6" value="写入iou_operate_order表，增加记录，状态为1，待确认&lt;br&gt;更新iou_relation，锁为1，占用状态" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" vertex="1" parent="1">
-          <mxGeometry x="386.5" y="643" width="333" height="38" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
